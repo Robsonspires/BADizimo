@@ -1,0 +1,100 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-center" href="">Controle Simples do dízimo</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Início
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="#Comunidades" @onclick="ToggleSubMenu">
+                <span class="oi oi-@Sign" aria-hidden="true"></span> Comunidades
+            </NavLink>
+        </div>
+
+        @if (Visible)
+        {
+            <li class="expand mx-3 p-2">
+                <ul>
+                    <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="#Consultar">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> Consultar
+                        </NavLink>
+                    </li>
+                    <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="#Incluir">
+                            <span class="oi oi-expand-up" aria-hidden="true"></span> Incluir
+                        </NavLink>
+                    </li>
+                    @* Inicialmente o Alterar e Excluir será chamado de dentro da consulta
+                        <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="#Alterar">
+                        <span class="oi oi-ellipses" aria-hidden="true"></span> Alterar
+                        </NavLink>
+                        </li>
+                    *@
+                    <li class="nav-item px-3">
+                        <NavLink class="nav-link" href="#Deletar">
+                            <span class="oi oi-trash" aria-hidden="true"></span> Deletar
+                        </NavLink>
+                    </li>
+                </ul>
+            </li>
+        }
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="#Dizimistas">
+                <span class="oi oi-plus" aria-hidden="true"></span> Dizimistas
+            </NavLink>
+        </div>
+    </nav>
+
+    @*Rodapé Ofir*@
+    <div class="blockquote-footer">
+        <div class="row">
+            <div class="col-3 align-items-center">
+                <img class="img-fluid rounded" style="max-width: 70px;height:auto" src="/img/Ofir1.png" alt="Como o ouro de Ofir." />
+            </div>
+            <div class="col-9 text-center text-white">
+                <label class="h6">
+                    Robson S. Pires
+                </label>
+                <label class="text-white text-primary-subtle">
+                    Web Developer
+                </label>
+                <label class="text-primary">
+                    <a href="https://github.com/Robsonspires">github.com/Robsonspires.</a>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+    private bool Visible = false;
+    private string Sign = "plus";
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void ToggleSubMenu()
+    {
+        Visible = !Visible;
+        Sign = Visible ? "minus" : "plus";
+    }
+
+}

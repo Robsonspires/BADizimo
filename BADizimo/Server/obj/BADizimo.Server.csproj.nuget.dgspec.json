@@ -1,0 +1,216 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Server\\BADizimo.Server.csproj": {}
+  },
+  "projects": {
+    "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Client\\BADizimo.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Client\\BADizimo.Client.csproj",
+        "projectName": "BADizimo.Client",
+        "projectPath": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Client\\BADizimo.Client.csproj",
+        "packagesPath": "C:\\Users\\Robson\\.nuget\\packages\\",
+        "outputPath": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Robson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Shared\\BADizimo.Shared.csproj": {
+                "projectPath": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Shared\\BADizimo.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[7.0.5, 7.0.5]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Server\\BADizimo.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Server\\BADizimo.Server.csproj",
+        "projectName": "BADizimo.Server",
+        "projectPath": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Server\\BADizimo.Server.csproj",
+        "packagesPath": "C:\\Users\\Robson\\.nuget\\packages\\",
+        "outputPath": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Robson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Client\\BADizimo.Client.csproj": {
+                "projectPath": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Client\\BADizimo.Client.csproj"
+              },
+              "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Shared\\BADizimo.Shared.csproj": {
+                "projectPath": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Shared\\BADizimo.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Shared\\BADizimo.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Shared\\BADizimo.Shared.csproj",
+        "projectName": "BADizimo.Shared",
+        "projectPath": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Shared\\BADizimo.Shared.csproj",
+        "packagesPath": "C:\\Users\\Robson\\.nuget\\packages\\",
+        "outputPath": "D:\\Usr\\Projetos Blazor\\BADizimo\\BADizimo\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Robson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
